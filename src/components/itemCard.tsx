@@ -9,10 +9,11 @@ interface itemCardProps {
 
 const itemCard: React.FC<itemCardProps> = ({ id, name, price, imageUrl }) => {
     return (
-        <div className="">
-            <div className="">
-                <h2 className="">{name}</h2>
-                <p className="">{price}</p>
+        <div className="border rounded-lg shadow-md">
+            <img src="{imageUrl}" alt="{name}" className="w-full h-48 object-cover rounded-t-lg" />
+            <div className="p-4">
+                <h2 className="text-lg font-semibold">{name}</h2>
+                <p className="text-gray-500">{price}</p>
             </div>
         </div>
     )
