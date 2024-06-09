@@ -9,3 +9,9 @@ interface PageProps {
         imageUrl: string
     }[];
 }
+
+const Page: React.FC<PageProps> = ({ products }) => {
+    return (
+        
+    )
+}
