@@ -4,5 +4,9 @@ interface itemCardProps {
     id: string;
     name: string;
     price: number;
-    imageURL: string;
+    imageUrl: string;
+}
+
+const itemCard: React.FC<itemCardProps> = ({ id, name, price, imageUrl }) => {
+    
 }
